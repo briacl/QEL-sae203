@@ -3,7 +3,7 @@
 $DB_HOST = '127.0.0.1';
 $DB_NAME = 'qel';
 $DB_LOGIN = 'root';
-$DB_PASSWORD = '';
+$DB_PASSWORD = '*T@PH2tRa8l';
 
 // Chemin vers index.php (dans le navigateur)
 // exemples :
