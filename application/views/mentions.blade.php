@@ -48,8 +48,6 @@
                             Si vous ne les acceptez pas, veuillez arrêter le site. En créant des questionnaires sur le site, vous vous engagez à
                             respecter les Conditions Générales d'Utilisation
                         </li>
-                        <li class="footer_liens-list-item"><a href=""></a>Article 1</li>
-                        <li class="footer_liens-list-item"><a href=""></a>Article 2</li>
                       </ul>
                     </div>
                   </div>
@@ -59,10 +57,12 @@
                     <span class="footer_row-title">société</span>
                     <div class="footer_content-wrapper" data-dropdown="content">
                       <ul class="footer_liens-list">
+                        <li class="footer_liens-list-item"><a href=""></a>Page des articles</li>
+                        <li class="footer_liens-list-item"><a href=""></a>Article 1</li>
+                        <li class="footer_liens-list-item"><a href=""></a>Article 2</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 3</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 4</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 5</li>
-                        <li class="footer_liens-list-item"><a href="easteregg.html"></a>easteregg</li>
                       </ul>
                     </div>
                   </div>
@@ -71,4 +71,8 @@
             </section>
           </div>
         </footer>
+@endsection
 
+@section('cta')
+<h3><a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus',' Créez votre questionnaire maintenant !','icon-neutral')!!}</a></h3>
+@endsection
