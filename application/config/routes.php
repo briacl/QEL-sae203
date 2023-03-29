@@ -29,7 +29,7 @@ add_route('choix',['token', 'idReponse'],'GET'); // choix d'une réponse
 
 add_route('briac'); // tentative réussie de création d'une nouvelle page (devenant l'exemple de création d'une page)
 
-add_route('mentions'); // création page des mentions légales
+add_route('legal'); // création page des mentions légales
 
 add_route('articles'); // création page des articles
 
