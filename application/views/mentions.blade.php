@@ -13,7 +13,7 @@
                       <ul class="footer_liens-list">
                         <li class="footer_liens-list-item"><a href=""></a>Editeur : qel</li>
                         <li class="footer_liens-list-item"><a href=""></a>Hébergeur : l'IUT de Lens</li>
-                        <li class="footer_liens-list-item">Développeurs : MMI Création Team 13, <a class="https://sae203.briac.cf/index.php?page=briac">Loic Courbet et Briac Le Meillat</a></li>
+                        <li class="footer_liens-list-item">Développeurs : MMI Création Team 13, <a href="https://sae203.briac.cf/index.php?page=briac">Loic Courbet et Briac Le Meillat</a></li>
                       </ul>
                     </div>
                   </div>
