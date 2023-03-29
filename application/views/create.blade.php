@@ -11,13 +11,6 @@
           <input type="text" name="titre" id="titre" placeholder="Films, livres et animés" required/></h3>
       <h3>{!!make_icon('calendar')!!} <label for="fin">Réponses possibles jusqu'au</label>
           <input type="datetime-local" name="fin" id="fin" value="{{substr((new DateTime())->add(DateInterval::createFromDateString('1 hour'))->format(DateTimeInterface::ISO8601),0,-8)}}"/></h3>
-      <h3>{!!make_icon('task')!!}<label for="statut">Statut</label>
-        <select name="statut" id="statut">
-            <option value="creation">Création</option>
-            <option value="publie">Publié</option>
-            <option value="termine">Terminé</option>
-        </select></h3>
-      <h3>
       </fieldset>
 
       <fieldset>
