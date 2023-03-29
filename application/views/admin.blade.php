@@ -4,13 +4,7 @@
 <h2>Administration du questionnaire</h2>
 <h3>{!!make_icon('pencil')!!}{{$questionnaire['titre']}}</h3>
 <h3>{!!make_icon('calendar')!!} Clôture à {{format_date($questionnaire['fin'])}}</h3>
-<h3>{!!make_icon('task')!!}<label for="statut">Statut</label>
-        <select name="statut" id="statut">
-            <option value="creation" {{ $questionnaire['statut'] == 'creation' ? "selected" : "" }}>Création</option>
-            <option value="publie" {{ $questionnaire['statut'] == 'publie' ? "selected" : "" }}>Publié</option>
-            <option value="termine" {{ $questionnaire['statut'] == 'termine' ? "selected" : "" }}>Terminé</option>
-        </select></h3>
-      <h3>{{$questionnaire['statut']}}
+<h3>{!!make_icon('task')!!}<label for="statut">Statut:  {{ $questionnaire['statut'] == 'creation' ? 'Création' :  ($questionnaire['statut']=='publie'?'Publié': ($questionnaire['statut']=='termine' ? 'Terminé' : 'ERREUR')) }}</label></h3>
 <h2>Questions : </h2>
 <ul>
 @foreach($questions as $question)
@@ -20,16 +14,16 @@
 
 
 
-<h3>{!!make_icon('info-square')!!} Lien vers cette page (pour vous) <br>
+<h3><a href="{!!$questionnaire['adminUrl']!!}">{!!make_icon('info-square')!!} Lien vers cette page (pour vous)</a> <br>
       <code>{!!$questionnaire['adminUrl']!!}</code>
 </h3>
 
 @endsection
 
 @section('cta')
+<a href="{{URL_INDEX}}?page=admin&token={!!$questionnaire['tokenAdmin']!!}&publie=1">{!!make_icon('link','Publier le questionnaire')!!}</a>
 
-
-<h3>{!!make_icon('link','Lien à partager')!!}  <br>
+<h3><a href="{!!$questionnaire['userUrl']!!}">{!!make_icon('link','Lien à partager')!!}</a><br>
    <code>{!!$questionnaire['userUrl']!!}</code></h3>
 
 @endsection
