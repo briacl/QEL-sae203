@@ -10,7 +10,7 @@ if ($questionnaire == null){
   exit();
 }
 
-$questions = get_questions_by_questionnaire_id($id);
+$questions = get_questions_by_questionnaire_id($questionnaire['id']);
 echo $blade->run('admin',compact('questionnaire','questions'));
 
 ?>

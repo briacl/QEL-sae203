@@ -13,9 +13,6 @@
     <p>
       source : <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjN-r68rP_9AhXGCuwKHV3BArIQFnoECBkQAQ&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FEaster_egg&usg=AOvVaw2YOc84NQhbdJJeaICsBJGr">wikipédia</a>
     </p>
-    <ul>
-      <li>regardé ce soir</li>
-    </ul>
 
 @endsection
 

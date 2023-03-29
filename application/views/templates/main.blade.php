@@ -37,6 +37,8 @@
         @yield("cta")
     </div>
 
-    <footer>&copy; MMI Création 2022-2023 -- tous droits réservés </footer>
+    <footer>&copy; MMI Création 2022-2023 -- tous droits réservés 
+    <a href="{{URL_INDEX}}?page=mentions" class="mentions_link"> Mentions légales</a>
+    </footer>
   </body>
 </html>

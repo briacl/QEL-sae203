@@ -434,13 +434,13 @@ footer {
 
 .footer_row-title {
   display: inline-block;
-  color: #c7c8c6;
+  color: #f8fbf6;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .2em;
   font-weight: 900;
   margin-bottom: 10px;
-  margin-left: 31px;
+  margin-left: 10px;
 }
 
 .footer_content-wrapper {
@@ -460,14 +460,14 @@ footer {
 
 .footer_liens-list-item {
   margin-bottom: 10px;
-  color: #c7c8c6;
+  color: #f8fbf6;
 }
 
-.mini_cgu {
+.mini_cgu{ /* petit message caché*/
   font-size: 0.1em;
 }
 
-.mentions_link {
+.mentions_link{/* lien vers les mentions légales*/
   text-decoration: none;
   margin-left: 75%;
   background-color: #4455CC;

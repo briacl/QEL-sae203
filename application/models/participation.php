@@ -101,7 +101,7 @@ function get_responses_with_freq($participation,$questionnaire){
   foreach($questions as &$question){
     $freq_question = $freq[$question['idQuestion']];
     $question['total'] = $freq_question['total'];
-    $question['montrer'] = $montrer != 'reponse';
+    //$question['montrer'] = $montrer != 'reponse'; mise en com car provoque erreur (demande des enseignants)
     for($i=0; $i< count($question['reponses']); $i++){
        $question['reponses'][$i]['count'] = $freq_question['reponses'][$i]['count'];
     }
