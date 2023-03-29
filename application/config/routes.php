@@ -32,4 +32,5 @@ add_route('mentions'); // création page des mentions légales
 
 add_route('articles'); // création page des articles
 
+add_route('github_webhook',[],'GET');
 ?>
