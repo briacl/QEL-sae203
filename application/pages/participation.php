@@ -15,14 +15,7 @@ if ($participation === NULL || $questionnaire === NULL){
   exit();
 }
 
-/*
-
-$questions = get_reponses_by_token($participation['token']);
-
+$questions = get_responses_with_freq($participation,$questionnaire);
 echo $blade->run('participation',compact('questionnaire','questions','participation'));
-
-*/
-
-$questions = get_responses_with_frq()
 
 ?>

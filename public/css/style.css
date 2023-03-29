@@ -463,11 +463,11 @@ footer {
   color: #f8fbf6;
 }
 
-.mini_cgu{ /* petit message caché*/
+.mini_cgu { /* petit message caché*/
   font-size: 0.1em;
 }
 
-.mentions_link{/* lien vers les mentions légales*/
+.mentions_link {/* lien vers les mentions légales*/
   text-decoration: none;
   margin-left: 75%;
   background-color: #4455CC;
@@ -479,3 +479,157 @@ footer {
   box-shadow: 2px 1px 1px gray;
 }
 
+
+
+
+/* FORMULAIRE CONNEXION*/
+
+.form-box_connexion {
+  max-width: 300px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+.form_connexion_compte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 30px;
+}
+
+/*Form text*/
+.title_connexion_compte {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle_connexion_compte {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-container_connexion_compte {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
+}
+
+/* FORMULAIRE INSCRIPTION*/
+
+.form-box_inscription {
+  max-width: 300px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+.form_inscription_compte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 30px;
+}
+
+/*Form text*/
+.title_inscription_compte {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle_inscription_compte {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-container_inscription_compte {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
+}

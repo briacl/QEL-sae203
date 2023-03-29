@@ -13,7 +13,7 @@
                       <ul class="footer_liens-list">
                         <li class="footer_liens-list-item"><a href=""></a>Editeur : qel</li>
                         <li class="footer_liens-list-item"><a href=""></a>Hébergeur : l'IUT de Lens</li>
-                        <li class="footer_liens-list-item"><a href=""></a>Développeurs : MMI Création Team 13, Loic Courbet et Briac Le Meillat</li>
+                        <li class="footer_liens-list-item">Développeurs : MMI Création Team 13, <a class="https://sae203.briac.cf/index.php?page=briac">Loic Courbet et Briac Le Meillat</a></li>
                       </ul>
                     </div>
                   </div>
@@ -44,7 +44,7 @@
                             toute les pages accessibles sur le site, ainsi que leur contenu, où les services qui vous sont proposés par
                             le site Qel : Questionnaire En Ligne
                         </li>
-                        <li class="footer_liens-list-item"><a href=""></a>Lu'tilisation du site signifie votre acceptation des "CGU".
+                        <li class="footer_liens-list-item"><a href=""></a>L'utilisation du site signifie votre acceptation des "CGU".
                             Si vous ne les acceptez pas, veuillez arrêter le site. En créant des questionnaires sur le site, vous vous engagez à
                             respecter les Conditions Générales d'Utilisation
                         </li>
@@ -57,13 +57,14 @@
                     <span class="footer_row-title">société</span>
                     <div class="footer_content-wrapper" data-dropdown="content">
                       <ul class="footer_liens-list">
-                        <li class="footer_liens-list-item"><a href=""></a>Page des articles</li>
+                        <li class="footer_liens-list-item"><a href="https://sae203.briac.cf/index.php?page=articles">Page des articles</a></li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 1</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 2</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 3</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 4</li>
                         <li class="footer_liens-list-item"><a href=""></a>Article 5</li>
                       </ul>
+                      
                     </div>
                   </div>
                 </div>

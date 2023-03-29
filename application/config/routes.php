@@ -16,6 +16,7 @@ require_once 'application/core/routing.php';
 add_route('index'); // route par défaut
 
 add_route('create'); // Création d'un nouvel évènement : formulaire
+
 add_route('create',['titre','fin','question','reponses'],'POST'); // creation proprement dite
 
 add_route('admin',['token'],'GET'); // Affichage du questionnaire, coté administrateur
@@ -33,5 +34,8 @@ add_route('mentions'); // création page des mentions légales
 add_route('articles'); // création page des articles
 
 add_route('github_webhook',[],'GET'); //appel manuel
+
 add_route('github_webhook',[],'POST'); //pour github
+
+add_route('profile'); //page connexion
 ?>
