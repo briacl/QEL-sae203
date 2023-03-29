@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE); //pas de warning sur php 8.1
 function format_date($date){
   return strftime("%H:%M %A %d %B %Y",strtotime($date));
 }
