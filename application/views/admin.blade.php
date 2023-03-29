@@ -21,8 +21,9 @@
 @endsection
 
 @section('cta')
+<input name='tokenAdmin' type='hidden' value="{!!$questionnaire['tokenAdmin']!!}"/>
+<a href="{{URL_INDEX}}?page=create&token={!!$questionnaire['tokenAdmin']!!}&ajout=1&questionnaireId={!!$questionnaire['id']!!}">{!!make_icon('link','Ajouter une question')!!}</a>
 <a href="{{URL_INDEX}}?page=admin&token={!!$questionnaire['tokenAdmin']!!}&publie=1">{!!make_icon('link','Publier le questionnaire')!!}</a>
-
 <h3><a href="{!!$questionnaire['userUrl']!!}">{!!make_icon('link','Lien à partager')!!}</a><br>
    <code>{!!$questionnaire['userUrl']!!}</code></h3>
 

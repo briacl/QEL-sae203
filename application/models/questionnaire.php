@@ -97,8 +97,6 @@ function set_statut($id,$statut){
   $query = $pdo->prepare($sql);
   $query->execute([$statut,$id]);
   $result = $query->fetch();
-  if ($result=== FALSE) return NULL;
-  update_statut($result);
 }
 
 /*
@@ -108,7 +106,9 @@ paramètre :
     et modifier si nécessaire
 */
 function update_statut(&$questionnaire){
-  //TODO
+    if (has_passed($questionnaire['fin'])){
+      set_statut($questionnaire['id'],'termine');
+    }
 }
 
 /*

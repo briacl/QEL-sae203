@@ -38,8 +38,11 @@
     </div>
 
     <footer>
-      <div>&copy; MMI Création 2022-2023 -- tous droits réservés 
-        <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>
+      <div class="footer_main">
+        <div>&copy; MMI Création 2022-2023 -- tous droits réservés</div>
+        <div>
+               <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>
+        </div>
       <div>
     </footer>
   </body>

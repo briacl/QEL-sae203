@@ -17,7 +17,11 @@ add_route('index'); // route par défaut
 
 add_route('create'); // Création d'un nouvel évènement : formulaire
 
+add_route('create',['token','autre','question','reponses'],'POST'); // ajout question
+
 add_route('create',['titre','fin','question','reponses'],'POST'); // creation proprement dite
+
+add_route('create',['token','ajout','GET']); //Ajout d'une question
 
 add_route('create',['token','publie','GET']); //Publication du questionnaire
 

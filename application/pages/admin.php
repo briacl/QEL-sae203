@@ -5,7 +5,7 @@ require_once 'application/models/questionnaire.php';
 
 $questionnaire = get_questionnaire_by_token_admin($token);
 
-if (isset($_GET['publie']) && $_GET['publie']=='1' && isset($questionnaire['id'])){
+if (isset($_GET['publie']) && $_GET['publie']=='1' && isset($_GET['token'])){
   set_statut($questionnaire['id'],'publie');
   $questionnaire = get_questionnaire_by_token_admin($token);
 }
