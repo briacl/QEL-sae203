@@ -19,6 +19,8 @@ add_route('create'); // Création d'un nouvel évènement : formulaire
 
 add_route('create',['titre','fin','question','reponses'],'POST'); // creation proprement dite
 
+add_route('create',['token','publie','GET']); //Publication du questionnaire
+
 add_route('admin',['token'],'GET'); // Affichage du questionnaire, coté administrateur
 
 add_route('questionnaire',['token'],'GET'); // Création d'une participation
