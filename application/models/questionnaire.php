@@ -93,7 +93,12 @@ paramètres :
 */
 function set_statut($id,$statut){
   global $pdo;
-  //TODO
+  $sql = 'UPDATE questionnaire SET statut = ? WHERE id = ?';
+  $query = $pdo->prepare($sql);
+  $query->execute([$statut,$id]);
+  $result = $query->fetch();
+  if ($result=== FALSE) return NULL;
+  update_statut($result);
 }
 
 /*
