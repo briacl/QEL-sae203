@@ -13,7 +13,7 @@
                     <span class="articles_row-title">Responsabilité de l’Éditeur</span>
                     <div class="articles_content-wrapper" data-dropdown="content">
                       <ul class="articles_liens-list">
-                        <li class="articles_liens-list-item"><a href=""></a>Tout dysfonctionnement du serveur ou du réseau ne peut engager la responsabilité de l’Éditeur.
+                        <li class="articles_liens-list-item">Tout dysfonctionnement du serveur ou du réseau ne peut engager la responsabilité de l’Éditeur.
                             De même, la responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.
                             Le site [votre site] s'engage à mettre en œuvre tous les moyens nécessaires pour garantir la sécurité et la confidentialité des données.
                             Toutefois, il n’apporte pas une garantie de sécurité totale.
@@ -28,7 +28,7 @@
                     <span class="articles_row-title">Évolution des conditions générales d’utilisation</span>
                     <div class="articles_content-wrapper" data-dropdown="content">
                       <ul class="articles_liens-list">
-                        <li class="articles_liens-list-item"><a href=""></a>Le site [votre site] se réserve le droit de modifier les clauses de ces conditions générales
+                        <li class="articles_liens-list-item">Le site [votre site] se réserve le droit de modifier les clauses de ces conditions générales
                             d’utilisation à tout moment et sans justification.
                         </li>
                       </ul>
@@ -40,7 +40,7 @@
                     <span class="articles_row-title">Durée du contrat</span>
                     <div class="articles_content-wrapper" data-dropdown="content">
                       <ul class="articles_liens-list">
-                        <li class="articles_liens-list-item"><a href=""></a>La durée du présent contrat est indéterminée. Le contrat produit ses effets à l'égard de l'Utilisateur
+                        <li class="articles_liens-list-item">La durée du présent contrat est indéterminée. Le contrat produit ses effets à l'égard de l'Utilisateur
                             à compter du début de l’utilisation du service.
                         </li>
                       </ul>
@@ -52,7 +52,7 @@
                     <span class="articles_row-title">Droit applicable et juridiction compétente</span>
                     <div class="articles_content-wrapper" data-dropdown="content">
                       <ul class="articles_liens-list">
-                        <li class="articles_liens-list-item"><a href=""></a>Le présent contrat dépend de la législation française. </br>
+                        <li class="articles_liens-list-item">Le présent contrat dépend de la législation française. </br>
                             En cas de litige non résolu à l’amiable entre l’Utilisateur et l’Éditeur, les tribunaux de [nom de ville] sont compétents pour régler le contentieux.
                         </li>
                       </ul>

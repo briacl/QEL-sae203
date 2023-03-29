@@ -696,6 +696,10 @@ footer {
   color: #f8fbf6;
 }
 
+.footer_liens-list-item > a {
+  text-decoration: none;
+}
+
 .mini_cgu { /* petit message caché*/
   font-size: 0.1em;
 }
