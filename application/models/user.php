@@ -14,15 +14,16 @@ Retour :
   en cas d'échec : NULL (+ info dans la session)
   en cas de réussite : un tableau associatif avec les clefs id, email et nom
 */
-function log_in($nom, $email, $password){
+function log_in($email, $mdp){
   global $pdo;
-
-  // Vérification du login/mot de passe
-  //TODO
-
-  // Test si le login est déjà utilisé
-
-}
+  $sql="SELECT * FROM utilisateur WHERE login=? AND mdp=SHA1(?)";
+  $q = $pdo->prepare($sql);
+  $q->execute([$email, $password]);
+  if ($line = $q->fetch()){
+    $_SESSION['idUser'] = $line['id'];
+    $_SESSION['login'] = $line['login'];
+  }
+} /* marche bof */
 
 /*
 Cherche les questionnaires créés par un utilisateur

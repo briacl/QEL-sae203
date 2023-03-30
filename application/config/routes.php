@@ -13,6 +13,10 @@ require_once 'application/core/routing.php';
 // existent. Les paramètres validés sont automatiquement convertis
 // en variables php de même nom
 
+add_route('github_webhook',[],'GET'); //appel manuel
+
+add_route('github_webhook',[],'POST'); //pour github
+
 add_route('index'); // route par défaut
 
 add_route('create'); // Création d'un nouvel évènement : formulaire
@@ -33,15 +37,22 @@ add_route('participation',['token'],'GET'); // Affichage de la participation
 
 add_route('choix',['token', 'idReponse'],'GET'); // choix d'une réponse
 
-add_route('briac'); // tentative réussie de création d'une nouvelle page (devenant l'exemple de création d'une page)
-
-add_route('legal'); // création page des mentions légales
+add_route('legal'); //affichage des mentions légales
 
 add_route('articles'); // création page des articles
 
-add_route('github_webhook',[],'GET'); //appel manuel
+add_route('profile',['mail', 'mdp'], 'POST'); // création page connexion/inscription
 
-add_route('github_webhook',[],'POST'); //pour github
+add_route('profile',['newmail','newpass'], 'POST'); // création page connexion/inscription; inscription
 
-add_route('profile'); //page connexion
+add_route('profile'); // connexion à un compte existant
+
+add_route('connexion',['mail','mdp'], 'POST'); // code fonction pour se connecter
+
+add_route('deconnexion'); // code fonction pour se déconnecter
+
+add_route('inscription', ['newmail','newpass'], 'POST'); // code fonction pour s'inscrire
+
+add_route('easteregg'); // création page easteregg
+
 ?>

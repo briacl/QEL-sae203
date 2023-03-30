@@ -16,17 +16,27 @@
        <img src="{{URL_IMG}}Qelh.png"/>
     </a>
 
-    <nav>
-      <a href="{{URL_INDEX}}">{!!make_icon('home','Accueil')!!}</a>
-      <a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus','Créer un questionnaire')!!}</a>
+          <!-- Menu sur le côté -->
+    <div class="menu">
+        <!-- Utilisation d'une checkbox -->
+      <input type="checkbox" id="hamburger">
+        <!-- Label de la checkbox -->
+      <label id="hamburger-logo" for="hamburger">
+        ☰
+      </label>
+        <!-- Le reste du menu -->
+      <nav>
+        <a href="{{URL_INDEX}}">{!!make_icon('home','Accueil')!!}</a>
+        <a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus','Créer un questionnaire')!!}</a>
 
-    @if(isset($_SESSION['idUtilisateur']))
-      <a href="{{URL_INDEX}}?page=profile">{!!make_icon('calendar','Mes questionnaires')!!}</a>
-      <a href="{{URL_INDEX}}?page=index&logout">{!!make_icon('log-out','Déconnexion')!!}</a>
-    @else
-      <a href="{{URL_INDEX}}?page=profile">{!!make_icon('log-in','Connexion')!!}</a>
-    @endif
-    </nav>
+        @if(isset($_SESSION['idUtilisateur']))
+        <a href="{{URL_INDEX}}?page=profile">{!!make_icon('calendar','Mes questionnaires')!!}</a>
+        <a href="{{URL_INDEX}}?page=index&logout">{!!make_icon('log-out','Déconnexion')!!}</a>
+        @else
+        <a href="{{URL_INDEX}}?page=profile">{!!make_icon('log-in','Connexion')!!}</a>
+        @endif
+      </nav>
+    </div>
 
     <main>
         @isset($titre)<h2>{{$titre}}</h2>@endisset
@@ -39,9 +49,11 @@
 
     <footer>
       <div class="footer_main">
-        <div>&copy; MMI Création 2022-2023 -- tous droits réservés</div>
         <div>
-               <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>
+          &copy; MMI Création 2022-2023 -- tous droits réservés
+        </div>
+        <div>
+          <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>
         </div>
       <div>
     </footer>
