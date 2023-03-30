@@ -24,6 +24,18 @@
           <input type="datetime-local" name="fin" id="fin" value="{{substr((new DateTime())->add(DateInterval::createFromDateString('1 hour'))->format(DateTimeInterface::ISO8601),0,-8)}}"/>
        @endif 
         </h3>
+        <h3>{!!make_icon('cog')!!} <label for="fin">Condition d'affichage</label>
+      @if ($ajout)
+      Visibilité: {{ $questionnaire['visibilite'] == 'toujours' ? 'Toujours visible' :  ($questionnaire['visibilite']=='apresreponse'?'Après avoir répondu': ($questionnaire['visibilite']=='apresfin' ? 'Après la fin du formulaire' : 'ERREUR')) }}
+      @else
+      <label for="visibilite">Visibilité:</label>
+          <select name="visibilite" id="visibilite">
+              <option value="toujours" selected>Toujours</option>
+              <option value="apresreponse">Après avoir répondu</option>
+              <option value="apresfin">Après la fin du formulaire</option>
+          </select>
+       @endif 
+        </h3>
       </fieldset>
 
       <fieldset>

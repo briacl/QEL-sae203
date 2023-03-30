@@ -11,11 +11,11 @@ require_once 'application/core/database.php';
 */
  function creer_questionnaire($donnees){ //
    global $pdo;
-   $sql = 'INSERT INTO questionnaire(tokenAdmin,tokenUser,titre,fin,debut)
-           VALUES(?,?,?,?,NOW())';
+   $sql = 'INSERT INTO questionnaire(tokenAdmin,tokenUser,titre,visibilite,fin,debut)
+           VALUES(?,?,?,?,?,NOW())';
    $query = $pdo->prepare($sql);
    extract($donnees);
-   $query->execute([$tokenAdmin,$tokenUser,$titre,$fin]);
+   $query->execute([$tokenAdmin,$tokenUser,$titre,$visibilite,$fin]);
    $id = $pdo->lastInsertId();
    return $id;
  }

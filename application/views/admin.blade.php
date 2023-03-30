@@ -4,7 +4,8 @@
 <h2>Administration du questionnaire</h2>
 <h3>{!!make_icon('pencil')!!}{{$questionnaire['titre']}}</h3>
 <h3>{!!make_icon('calendar')!!} Clôture à {{format_date($questionnaire['fin'])}}</h3>
-<h3>{!!make_icon('task')!!}<label for="statut">Statut:  {{ $questionnaire['statut'] == 'creation' ? 'Création' :  ($questionnaire['statut']=='publie'?'Publié': ($questionnaire['statut']=='termine' ? 'Terminé' : 'ERREUR')) }}</label></h3>
+<h3>{!!make_icon('task')!!}Statut:  {{ $questionnaire['statut'] == 'creation' ? 'Création' :  ($questionnaire['statut']=='publie'?'Publié': ($questionnaire['statut']=='termine' ? 'Terminé' : 'ERREUR')) }}</h3>
+<h3>{!!make_icon('cog')!!}Condition d'affichage: {{ $questionnaire['visibilite'] == 'toujours' ? 'Toujours visible' :  ($questionnaire['visibilite']=='apresreponse'?'Après avoir répondu': ($questionnaire['visibilite']=='apresfin' ? 'Après la fin du formulaire' : 'ERREUR')) }}</h">
 <h2>Questions : </h2>
 <ul>
 @foreach($questions as $question)

@@ -44,5 +44,5 @@ setlocale(LC_ALL, $locale);
 setlocale(LC_TIME, $locale);
 date_default_timezone_set("Europe/Paris");
 
-//define('DEBUG_PASSED',true);
+define('DEBUG_PASSED',true);
 ?>

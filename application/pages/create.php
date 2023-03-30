@@ -21,7 +21,8 @@ if (!isset($autre) || ($autre!='autre'))
 {///////////// Construction du questionnaire
 $tokenAdmin = generate_token(20);
 $tokenUser = generate_token(20);
-$idQuestionnaire = creer_questionnaire(compact('tokenAdmin','tokenUser','titre','fin'));
+$visibilite = $_POST['visibilite'];
+$idQuestionnaire = creer_questionnaire(compact('tokenAdmin','tokenUser','titre','visibilite','fin'));
 }else{
   //on ajoute à un questionnaire existant
   $question = $_POST['question'];
