@@ -13,10 +13,10 @@ retour :
 */
  function creer_question($idQuestionnaire,$question,$ouverte=false){ //
    global $pdo;
-   $sql = 'INSERT INTO question(idQuestionnaire,question)
-           VALUES(?,?)';
+   $sql = 'INSERT INTO question(idQuestionnaire,question,ouverte)
+           VALUES(?,?,?)';
    $query = $pdo->prepare($sql);
-   $query->execute([$idQuestionnaire,$question]);
+   $query->execute([$idQuestionnaire,$question, $ouverte ? 1 : 0]);
    $id = $pdo->lastInsertId();
    return $id;
  }
@@ -49,7 +49,7 @@ paramètres :
     $ouverte : indique si on pourra ajouter de nouvelles réponses (optionnel)
 */
  function creer_question_reponse($id,$question,$reponses,$ouverte=false){ //
-   $idQuestion = creer_question($id,$question);
+   $idQuestion = creer_question($id,$question,$ouverte);
 
    //////////// Construction des Réponses
 

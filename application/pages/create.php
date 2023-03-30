@@ -22,6 +22,7 @@ if (!isset($autre) || ($autre!='autre'))
 $tokenAdmin = generate_token(20);
 $tokenUser = generate_token(20);
 $visibilite = $_POST['visibilite'];
+$ouverte = (isset($_POST['ouverte']) && $_POST['ouverte']=="on") ? true : false ;
 $idQuestionnaire = creer_questionnaire(compact('tokenAdmin','tokenUser','titre','visibilite','fin'));
 }else{
   //on ajoute à un questionnaire existant
@@ -31,7 +32,7 @@ $idQuestionnaire = creer_questionnaire(compact('tokenAdmin','tokenUser','titre',
   $tokenAdmin = $_POST['token'];
 }
 //////////// Construction de la question
-creer_question_reponse($idQuestionnaire,$question,$reponses);
+creer_question_reponse($idQuestionnaire,$question,$ouverte,$reponses);
 
 // redirection sur la page admin du questionnaire
 header('Location: '.get_admin_url($tokenAdmin));

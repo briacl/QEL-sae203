@@ -1,3 +1,4 @@
+@php ($position=1)
 <div class="question">
   <h3>{{$question['question']}}</h3>
   <ul>
@@ -17,7 +18,37 @@
           @endif
       @endif
     </li>
+    @php (var_dump($reponse))
+    @if ($reponse['ouverte'])
+          @if((strlen($reponse['reponse'])<1) || true)
+                  <li>
+                    <input id="reponseouverte" position="{{$position}}" name="reponseouverte">&nbsp;<label for="reponseouverte">Votre propre réponse</label>
+                  </li>
+                  <li>
+                    <a class="nosboutons nosboutons-1" href="javascript:get_url_choix_plus()">Valider</a>  
+                  </li>
+            @else
+                  <li>Une réponse personnalisée était permise</li>
+            @endif
+    @endif
+    @php ($position++)
     @endforeach
   </ul>
 
 </div>
+<script language="javascript">
+  function get_url_choix_plus(){
+    const token = '{!!$participation['token']!!}';
+    const baseUrlProtocol = document.location.protocol;
+    const baseUrlHostname = document.location.hostname;
+    const baseUrl = new URL(`${baseUrlProtocol}//${baseUrlHostname}?page=choix`);
+    const idQuestion = "{!!$question['idQuestion']!!}";
+    const reponseOuverte = document.getElementById('reponseouverte').value;
+    const position = document.getElementById('reponseouverte').getAttribute('position');
+    baseUrl.searchParams.append('reponseouverte',reponseOuverte)
+    baseUrl.searchParams.append('token',token);
+    baseUrl.searchParams.append('idquestion',idQuestion);
+    baseUrl.searchParams.append('position', position);
+    document.location.href = baseUrl.href;
+  }
+</script>

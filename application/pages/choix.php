@@ -15,7 +15,20 @@ $idQuestionnaire = $participation['idQuestionnaire'];
 
 $questionnaire = get_questionnaire_by_id($idQuestionnaire);
 
-set_choix($idParticipation,$idReponse);
+$reponseouverte = isset($_GET['reponseouverte']) ? $_GET['reponseouverte'] : null;
+
+if ($reponseouverte)
+{
+  //TODO Mission 6
+  $idQuestion = isset($_GET['idquestion']) ? $_GET['idquestion'] : null;
+  $position = 1 ; //TODO what is the position ????
+  creer_reponse($idQuestion,$position,$reponseouverte);
+}
+else
+{ 
+  // pas de réponse ouverte
+  set_choix($idParticipation,$idReponse);
+}
 
 header('Location: '.get_url_participation($token));
 ?>

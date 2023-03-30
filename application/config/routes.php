@@ -37,6 +37,8 @@ add_route('participation',['token'],'GET'); // Affichage de la participation
 
 add_route('choix',['token', 'idReponse'],'GET'); // choix d'une réponse
 
+add_route('choix',['token', 'reponseouverte'],'GET'); // choix d'une réponse personnalisée
+
 add_route('legal'); //affichage des mentions légales
 
 add_route('articles'); // création page des articles
