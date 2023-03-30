@@ -6,6 +6,10 @@ require_once 'application/models/questionnaire.php';
 
 $reponseouverte = isset($_GET['reponseouverte']) ? $_GET['reponseouverte'] : null;
 $aparticipe =  isset($_GET['aparticipe']) && ($_GET['aparticipe'] == '1') ? 1 : 0;
+if ($aparticipe == 0)
+{
+  auto_remove();
+}
 $participation = get_participation_by_token($token);
 if ($participation != NULL){
   $questionnaire = get_questionnaire_by_id($participation['idQuestionnaire']);

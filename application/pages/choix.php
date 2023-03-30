@@ -21,8 +21,7 @@ if ($reponseouverte)
 {
   //TODO Mission 6
   $idQuestion = isset($_GET['idquestion']) ? $_GET['idquestion'] : null;
-  $position = 1 ; //TODO what is the position ????
-  creer_reponse($idQuestion,$position,$reponseouverte);
+  creer_reponse($idQuestion,0,$reponseouverte); //position = 0 pour réponse libre
 }
 else
 { 

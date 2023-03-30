@@ -157,6 +157,12 @@ function remove_empty($idReponse){
 //TODO
 }
 
+function auto_remove(){
+  global $pdo;
+  $sql="DELETE FROM reponse WHERE position = 0 AND	id NOT IN (SELECT idReponse FROM choix)";
+  $query = $pdo->prepare($sql);
+  $query->execute();
+}
 /*
 Relie une participation à l'utilisateur correspondant
 paramètres :

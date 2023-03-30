@@ -23,7 +23,8 @@
     @if ($reponse['ouverte'])
           @if(!$aparticipe)
                   <li>
-                    <input id="reponseouverte" position="{{$position}}" name="reponseouverte">&nbsp;<label for="reponseouverte">Votre propre réponse</label>
+                    <!-- position 0 identifie une réponse ouverte -->
+                    <input id="reponseouverte" position="0" name="reponseouverte">&nbsp;<label for="reponseouverte">Votre propre réponse</label>
                   </li>
                   <li>
                     <a class="nosboutons nosboutons-1" href="javascript:get_url_choix_plus()">Valider</a>  
