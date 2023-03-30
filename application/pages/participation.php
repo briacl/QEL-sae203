@@ -5,7 +5,7 @@ require_once 'application/models/question.php';
 require_once 'application/models/questionnaire.php';
 
 $reponseouverte = isset($_GET['reponseouverte']) ? $_GET['reponseouverte'] : null;
-
+$aparticipe =  isset($_GET['aparticipe']) && ($_GET['aparticipe'] == '1') ? 1 : 0;
 $participation = get_participation_by_token($token);
 if ($participation != NULL){
   $questionnaire = get_questionnaire_by_id($participation['idQuestionnaire']);
@@ -18,6 +18,6 @@ if ($participation === NULL || $questionnaire === NULL){
 
 
 $questions = get_responses_with_freq($participation,$questionnaire);
-echo $blade->run('participation',compact('questionnaire','questions','participation'));
+echo $blade->run('participation',compact('questionnaire','questions','participation','aparticipe'));
 
 ?>

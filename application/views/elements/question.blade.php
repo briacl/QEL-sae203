@@ -18,8 +18,10 @@
           @endif
       @endif
     </li>
+    @php ($position++)
+    @endforeach
     @if ($reponse['ouverte'])
-          @if((strlen($reponse['reponse'])<1) || true)
+          @if(!$aparticipe)
                   <li>
                     <input id="reponseouverte" position="{{$position}}" name="reponseouverte">&nbsp;<label for="reponseouverte">Votre propre réponse</label>
                   </li>
@@ -30,8 +32,6 @@
                   <li>Une réponse personnalisée était permise</li>
             @endif
     @endif
-    @php ($position++)
-    @endforeach
   </ul>
 
 </div>

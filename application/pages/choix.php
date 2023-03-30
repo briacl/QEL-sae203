@@ -30,5 +30,5 @@ else
   set_choix($idParticipation,$idReponse);
 }
 
-header('Location: '.get_url_participation($token));
+header('Location: '.get_url_participation($token)."&aparticipe=1");
 ?>

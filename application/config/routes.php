@@ -35,6 +35,8 @@ add_route('questionnaire',['token'],'GET'); // Création d'une participation
 
 add_route('participation',['token'],'GET'); // Affichage de la participation
 
+add_route('participation',['token','aparticipe'],'GET'); // Affichage de la participation après avoir participé
+
 add_route('choix',['token', 'idReponse'],'GET'); // choix d'une réponse
 
 add_route('choix',['token', 'reponseouverte'],'GET'); // choix d'une réponse personnalisée
