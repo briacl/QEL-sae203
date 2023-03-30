@@ -32,7 +32,7 @@ $idQuestionnaire = creer_questionnaire(compact('tokenAdmin','tokenUser','titre',
   $tokenAdmin = $_POST['token'];
 }
 //////////// Construction de la question
-creer_question_reponse($idQuestionnaire,$question,$ouverte,$reponses);
+creer_question_reponse($idQuestionnaire,$question,$reponses,$ouverte);
 
 // redirection sur la page admin du questionnaire
 header('Location: '.get_admin_url($tokenAdmin));

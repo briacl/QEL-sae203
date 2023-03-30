@@ -18,7 +18,6 @@
           @endif
       @endif
     </li>
-    @php (var_dump($reponse))
     @if ($reponse['ouverte'])
           @if((strlen($reponse['reponse'])<1) || true)
                   <li>
