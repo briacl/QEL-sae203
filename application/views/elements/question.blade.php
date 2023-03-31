@@ -39,10 +39,12 @@
 <script language="javascript">
   function get_url_choix_plus(){
     const token = '{!!$participation['token']!!}';
-    const baseUrlProtocol = document.location.protocol;
-    const baseUrlHostname = document.location.hostname;
-    const baseUrlPort = document.location.port;
-    const baseUrl = new URL(`${baseUrlProtocol}//${baseUrlHostname}:${baseUrlPort}?page=choix`);
+    // const baseUrlProtocol = document.location.protocol;
+    // const baseUrlHostname = document.location.hostname;
+    // const baseUrlPort = document.location.port;
+    // const baseUrl = new URL(`${baseUrlProtocol}//${baseUrlHostname}:${baseUrlPort}?page=choix`);
+    const baseURLSite = '{!!BASE_URL!!}';
+    const baseUrl = new URL(`${baseURLSite}?page=choix`);
     const idQuestion = "{!!$question['idQuestion']!!}";
     const reponseOuverte = document.getElementById('reponseouverte').value;
     const position = document.getElementById('reponseouverte').getAttribute('position');
