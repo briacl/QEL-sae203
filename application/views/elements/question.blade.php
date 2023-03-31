@@ -41,7 +41,8 @@
     const token = '{!!$participation['token']!!}';
     const baseUrlProtocol = document.location.protocol;
     const baseUrlHostname = document.location.hostname;
-    const baseUrl = new URL(`${baseUrlProtocol}//${baseUrlHostname}?page=choix`);
+    const baseUrlPort = document.location.port;
+    const baseUrl = new URL(`${baseUrlProtocol}//${baseUrlHostname}:${baseUrlPort}?page=choix`);
     const idQuestion = "{!!$question['idQuestion']!!}";
     const reponseOuverte = document.getElementById('reponseouverte').value;
     const position = document.getElementById('reponseouverte').getAttribute('position');
