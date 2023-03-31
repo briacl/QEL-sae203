@@ -95,8 +95,13 @@ function set_statut($id,$statut){
   global $pdo;
   $sql = 'UPDATE questionnaire SET statut = ? WHERE id = ?';
   $query = $pdo->prepare($sql);
-  $query->execute([$statut,$id]);
-  $result = $query->fetch();
+  try{
+    $query->execute([$statut,$id]);
+    $result = $query->fetch();
+  }catch(Exception $e)
+  {
+    //TODO
+  }
 }
 
 /*
