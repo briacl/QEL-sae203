@@ -28,6 +28,7 @@
       <nav>
         <a href="{{URL_INDEX}}">{!!make_icon('home','Accueil')!!}</a>
         <a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus','Créer un questionnaire')!!}</a>
+        <a href="{{URL_INDEX}}?page=serveurweb">werveur web</a>
 
         @if(isset($_SESSION['idUtilisateur']))
         <a href="{{URL_INDEX}}?page=profile">{!!make_icon('calendar','Mes questionnaires')!!}</a>

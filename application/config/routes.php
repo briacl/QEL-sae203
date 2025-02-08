@@ -59,4 +59,8 @@ add_route('inscription', ['newmail','newpass'], 'POST'); // code fonction pour s
 
 add_route('easteregg'); // création page easteregg
 
+
+
+add_route('serveurweb'); // Création d'un nouvel évènement : formulaire
+
 ?>
