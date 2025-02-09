@@ -13,9 +13,7 @@
       @php unset($_SESSION['info']); @endphp
     @endisset
 
-    <a href="{{ URL_INDEX }}?page=serveurweb" class="hh">
-        <img src="{{ URL_IMG }}Qelh.png" />
-    </a>
+
 
     <!-- Menu sur le côté -->
     <div class="menu">
