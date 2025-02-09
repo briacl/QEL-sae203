@@ -7,7 +7,7 @@
 
   <p>ici est le <a href="{{ url('apiServeurweb') }}">lien</a> vers le résultat de l'API.</p>
 
-  @if($data->isNotEmpty())
+  @if(!empty($data))
       <table>
           <tbody>
               @foreach($data as $item)
