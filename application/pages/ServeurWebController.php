@@ -1,6 +1,6 @@
 <?php
 
-require_once 'application/core/Controller.php';
+use 'application/core/Controller.php';
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;  // Pour utiliser DB et effectuer des requêtes SQL brutes
 
