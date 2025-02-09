@@ -22,6 +22,6 @@ class ServeurWebController extends Controller
         $data = DB::connection('second_db')->select('SELECT * FROM Tracks');
 
         // Retourner les données en JSON
-        return response()->json($data);
+        return view('pages.apiServeurweb', ['jsondata' => json($data)]);
     }
 }
