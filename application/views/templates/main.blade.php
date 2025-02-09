@@ -28,7 +28,7 @@
         <!-- Le reste du menu -->
         <nav>
             <a href="{{ URL_INDEX }}?page=serveurweb">{!! make_icon('home', 'Accueil') !!}</a>
-            <a href="{{ url('serveurweb') }}">Page Serveur Web</a>
+            <a href="{{ URL_INDEX }}?page=serveurweb">Page Serveur Web</a>
             <a href="{{ URL_INDEX }}?page=create">{!! make_icon('calendar-plus', 'Créer un questionnaire') !!}</a>
 
             @if(isset($_SESSION['idUtilisateur']))
