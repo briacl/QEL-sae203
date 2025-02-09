@@ -63,7 +63,7 @@ add_route('easteregg'); // création page easteregg
 
 
 
-add_route('serveurweb', [ServeurWebController::class, 'index']); // route de la page serveurweb
+add_route('serveurweb'); // route de la page serveurweb
 add_route('apiServeurweb', [ServeurWebController::class, 'apiServeurweb']);
 
 ?>
