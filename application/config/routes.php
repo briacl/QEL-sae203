@@ -61,6 +61,7 @@ add_route('easteregg'); // création page easteregg
 
 
 
-add_route('serveurweb'); // Création d'un nouvel évènement : formulaire
+add_route('serveurweb'); // route de la page serveurweb
+add_route('apiServeurweb'); // route de l'api de la page serveurweb
 
 ?>

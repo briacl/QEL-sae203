@@ -28,7 +28,6 @@
       <nav>
         <a href="{{URL_INDEX}}">{!!make_icon('home','Accueil')!!}</a>
         <a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus','Créer un questionnaire')!!}</a>
-        <a href="{{URL_INDEX}}?page=serveurweb">werveur web</a>
 
         @if(isset($_SESSION['idUtilisateur']))
         <a href="{{URL_INDEX}}?page=profile">{!!make_icon('calendar','Mes questionnaires')!!}</a>
@@ -52,6 +51,7 @@
       <div class="footer_main">
         <div>
           &copy; MMI Création 2022-2023 -- tous droits réservés
+          <p><a href="{{ url('serveurweb') }}">Page Serveur Web</a></p>
         </div>
         <div>
           <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>

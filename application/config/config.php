@@ -5,6 +5,11 @@ $DB_NAME = 'qel';
 $DB_LOGIN = 'root';
 $DB_PASSWORD = '*T@PH2tRa8l';
 
+$DB_SECOND_HOST = 'localhost';
+$DB_SECOND_DATABASE = 'crashtestTardisMusicApp';
+$DB_SECOND_USERNAME = 'root';
+$DB_SECOND_PASSWORD = '*T@PH2tRa8l';
+
 // Chemin vers index.php (dans le navigateur)
 // exemples :
 // - avec php -S lancé dans le répertoire du projet
