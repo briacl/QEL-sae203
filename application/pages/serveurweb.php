@@ -1,4 +1,3 @@
-<?php
 @extends('templates.main')
 @section('content')
 
@@ -8,6 +7,7 @@
 
   <p>ici est le <a href="{{ url('apiServeurweb') }}">lien</a> vers le résultat de l'API.</p>
 
+  <?php
   @if($data->isNotEmpty())
       <table>
           <tbody>
@@ -22,4 +22,5 @@
   @else
       <p>Aucune donnée trouvée dans la base de données.</p>
   @endif
+  ?>
 @endsection
