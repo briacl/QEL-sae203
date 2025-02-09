@@ -1,6 +1,6 @@
 <?php
 require_once 'application/core/routing.php';
-use App\Http\Controllers\ServeurWebController;
+use ServeurWebController;
 
 
 // Configuration des routes, c'est à dire l'association entre les pages demandées
