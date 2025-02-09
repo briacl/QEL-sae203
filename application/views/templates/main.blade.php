@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -6,13 +5,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota&family=Monoton&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{URL_CSS}}style.css">
+    <link rel="stylesheet" href="{{ URL_CSS }}style.css">
   </head>
   <body>
     @isset($_SESSION['info'])
-      <p id="info">{{$_SESSION['info']}}</p>@php unset($_SESSION['info']); @endphp
-      <?php
+      <p id="info">{{ $_SESSION['info'] }}</p>
+      @php unset($_SESSION['info']); @endphp
     @endisset
+
     <a href="{{ URL_INDEX }}?page=serveurweb" class="hh">
         <img src="{{ URL_IMG }}Qelh.png" />
     </a>
@@ -46,20 +46,5 @@
         @endisset
         @yield("content")
     </main>
-
-    <div class="cta">
-        @yield("cta")
-    </div>
-
-    <footer>
-      <div class="footer_main">
-        <div>
-          &copy; MMI Création 2022-2023 -- tous droits réservés
-        </div>
-        <div>
-          <a href="{{URL_INDEX}}?page=legal" class="mentions_link"> Mentions légales</a>
-        </div>
-      <div>
-    </footer>
   </body>
 </html>
