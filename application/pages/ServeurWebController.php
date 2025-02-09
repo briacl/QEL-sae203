@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;  // Pour utiliser DB et effectuer des requêtes SQL brutes
 
-class ServeurWebController extends Controller
+class ServeurWebController
 {
     public function index()
     {
