@@ -13,7 +13,7 @@ class ServeurWebController extends Controller
         $data = DB::connection('second_db')->select('SELECT * FROM Tracks');  // 'second_db' est la connexion à la base secondaire
 
         // Retourner la vue Blade avec les données récupérées
-        return view('serveurweb', ['data' => $data]);
+        return view('pages.serveurweb', ['data' => $data]);
     }
 
     public function apiServeurweb()
