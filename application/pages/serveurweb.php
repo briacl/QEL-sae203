@@ -1,3 +1,4 @@
+<?php
 @extends('templates.main')
 @section('content')
 

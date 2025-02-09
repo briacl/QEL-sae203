@@ -1,5 +1,7 @@
 <?php
 require_once 'application/core/routing.php';
+use App\Http\Controllers\ServeurWebController;
+
 
 // Configuration des routes, c'est à dire l'association entre les pages demandées
 // et le code php à exécuter
@@ -61,7 +63,7 @@ add_route('easteregg'); // création page easteregg
 
 
 
-add_route('serveurweb'); // route de la page serveurweb
+add_route('serveurweb', [ServeurWebController::class, 'index']); // route de la page serveurweb
 add_route('apiServeurweb'); // route de l'api de la page serveurweb
 
 ?>
