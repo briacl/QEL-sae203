@@ -5,7 +5,7 @@
 
   <h1>Données de la seconde base de données</h1>
 
-  <p>ici est le <a href="{{ url('apiServeurweb') }}">lien</a> vers le résultat de l'API.</p>
+  <p>ici est le <a href="{{ URL_INDEX }}?page=apiServeurweb">lien</a> vers le résultat de l'API.</p>
 
   @if(!empty($data))
       <table>
