@@ -11,36 +11,39 @@
   <body>
     @isset($_SESSION['info'])
       <p id="info">{{$_SESSION['info']}}</p>@php unset($_SESSION['info']); @endphp
+      <?php
     @endisset
-    <a href="{{URL_INDEX}}" class = "hh">
-       <img src="{{URL_IMG}}Qelh.png"/>
+    <a href="{{ URL_INDEX }}?page=serveurweb" class="hh">
+        <img src="{{ URL_IMG }}Qelh.png" />
     </a>
 
-          <!-- Menu sur le côté -->
+    <!-- Menu sur le côté -->
     <div class="menu">
         <!-- Utilisation d'une checkbox -->
-      <input type="checkbox" id="hamburger">
+        <input type="checkbox" id="hamburger">
         <!-- Label de la checkbox -->
-      <label id="hamburger-logo" for="hamburger">
-        ☰
-      </label>
+        <label id="hamburger-logo" for="hamburger">
+            ☰
+        </label>
         <!-- Le reste du menu -->
-      <nav>
-        <a href="{{URL_INDEX}}?page=serveurweb">{!!make_icon('home','Accueil')!!}</a>
-        <a href="{{ url('serveurweb') }}">Page Serveur Web</a>
-        <a href="{{URL_INDEX}}?page=create">{!!make_icon('calendar-plus','Créer un questionnaire')!!}</a>
+        <nav>
+            <a href="{{ URL_INDEX }}?page=serveurweb">{!! make_icon('home', 'Accueil') !!}</a>
+            <a href="{{ url('serveurweb') }}">Page Serveur Web</a>
+            <a href="{{ URL_INDEX }}?page=create">{!! make_icon('calendar-plus', 'Créer un questionnaire') !!}</a>
 
-        @if(isset($_SESSION['idUtilisateur']))
-        <a href="{{URL_INDEX}}?page=profile">{!!make_icon('calendar','Mes questionnaires')!!}</a>
-        <a href="{{URL_INDEX}}?page=index&logout">{!!make_icon('log-out','Déconnexion')!!}</a>
-        @else
-        <a href="{{URL_INDEX}}?page=profile">{!!make_icon('log-in','Connexion')!!}</a>
-        @endif
-      </nav>
+            @if(isset($_SESSION['idUtilisateur']))
+            <a href="{{ URL_INDEX }}?page=profile">{!! make_icon('calendar', 'Mes questionnaires') !!}</a>
+            <a href="{{ URL_INDEX }}?page=index&logout">{!! make_icon('log-out', 'Déconnexion') !!}</a>
+            @else
+            <a href="{{ URL_INDEX }}?page=profile">{!! make_icon('log-in', 'Connexion') !!}</a>
+            @endif
+        </nav>
     </div>
 
     <main>
-        @isset($titre)<h2>{{$titre}}</h2>@endisset
+        @isset($titre)
+        <h2>{{ $titre }}</h2>
+        @endisset
         @yield("content")
     </main>
 
