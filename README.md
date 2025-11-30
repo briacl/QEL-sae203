@@ -1,1 +1,26 @@
-# sae203
+# sae203 - projet QEL : Questionnaires en ligne
+
+ce projet est le 2ème site web php que j'ai réalisé
+
+Installation du projet :
+
+1) Installation des dépendances :
+
+A la racine, lancez :
+
+composer install
+
+2) Installation de la base de données
+
+Le fichier qel.sql contient la base de données à utiliser. Importez-le
+dans la base à utiliser (créez celle-ci si nécessaire)
+
+2) Configuration
+
+- Copiez application/config/config.php.example vers application/config/config.php
+- Editez application/config/config.php (suivre les indications en commentaires dans le fichier)
+
+3) Lancement
+
+En fonction de ce que vous avez indiqué dans config.php, lancez le site avec
+php -S ou en l'hébergeant
